@@ -1,0 +1,12 @@
+/* Base 스타일 작성 */
+.container {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.common-inner {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1020px;
+}
