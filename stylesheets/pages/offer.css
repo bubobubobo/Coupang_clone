@@ -45,6 +45,7 @@ h1, h2 {
   margin-top: 24px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .product-card {
@@ -95,5 +96,7 @@ h1, h2 {
 }
 
 .product-rating {
-
+  position: absolute;
+  bottom: -29px;
+  clip: rect(124.4px, 68px, 138.2px, 0px);
 }
