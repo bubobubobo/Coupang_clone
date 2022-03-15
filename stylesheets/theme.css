@@ -69,6 +69,15 @@
 
   --base-size: 10px;
   --font-family: 'Noto Sans KR', sans-serif;
+
+  /* custom variables */
+  --rating-four-margin: -25px;
+  --rating-four-half-margin: -11px;
+  --rating-five-margin: 3px;
+
+  --rating-four: rect(110.55px, 68px, 124.4px, 0px);
+  --rating-four-half: rect(124.4px, 68px, 138.2px, 0px);
+  --rating-five: rect(138.2px, 68px, 152px, 0px);
 }
 
 html{
@@ -78,4 +87,5 @@ html{
 body{
   color: var(--color-black);
   background: var(--color-white);
+
 }
