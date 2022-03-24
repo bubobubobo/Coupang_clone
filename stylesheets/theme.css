@@ -69,6 +69,10 @@
 
   --base-size: 10px;
   --font-family: 'Noto Sans KR', sans-serif;
+
+  /* custom variables */
+  --header-size: 204;
+  --best-section-title-size: 70;
 }
 
 html{
