@@ -1,0 +1,33 @@
+/* 카테고리별 추천 광고상품 */
+.common-inner {
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+.daily-supplies-area {
+  display: flex;
+}
+
+.tag-area {
+  width: 174px;
+  height: 631px;
+  background-color: lightblue;
+}
+
+.carousel {
+  width: 320px;
+  height: 631px;
+  background-color: lightcoral;
+}
+
+.product-list {
+  width: 526px;
+  background-color: lightcyan;
+}
+
+li {
+  border: 1px solid red;
+  margin: 10px;
+  margin-left: -10px;
+  padding: 10px;
+}
