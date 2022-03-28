@@ -69,7 +69,6 @@ h1, h2, h3 {
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,32 +76,57 @@ h1, h2, h3 {
 
 .indicator {
   position: relative;
-  top: 597px;
+  top: 507px;
   margin: 0 auto;
   width: 32px;
   height: 12px;
-  background-color: black;
-  z-index: 9999;
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .indicator> a {
   width: 12px;
   height: 12px;
+  position: relative;
   border-radius: 100%;
-  background-color: green;
+  background-color: var(--color-gray-600);
   z-index: 9999;
-  bottom: 0;
-  left: 100px;
 }
 
-div > img {
+div > .image {
   object-fit: cover;
   position: absolute;
-  top: 0;
-  left: 0;
-  /* width: 100%; */
-  /* height: 100%; */
+}
+
+.slider-caption {
+  position: relative;
+  background-color: var(--color-brown-300);
+  width: 260px;
+  height: 90px;
+  top: 483px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-caption > span {
+  text-align: center;
+  color: white;
+  line-height: 115%;
+}
+.slider-caption > .caption-text1 {
+  font-size: 18px;
+  font-weight: bold;
+  width: 205px;
+  height: 24px;
+  margin: 19px auto 0;
+}
+.slider-caption > .caption-text2 {
+  font-size: 14px;
+  font-weight: regular;
+  width: 215px;
+  height: 19px;
+  margin: 9px auto 0;
 }
 
 .product-list {
