@@ -1,1 +1,48 @@
 /* 헤더 */
+header {
+  position: relative;
+  height: 150px;
+  background-color: lightgreen;
+
+}
+
+/* 로그인 바 */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.login-bar {
+  width: 100%;
+  height: 34px;
+  background-color: var(--color-gray-100);
+}
+
+.login-bar-list {
+  width: 1020px;
+  margin: auto;
+}
+
+.login-bar-list li {
+  display: inline;
+  padding-top: 8px;
+  line-height: 120%;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.login-bar-list .left {
+  float: left;
+  margin-right: 8px;
+}
+
+.login-bar-list .right {
+  float: right;
+  margin-left: 8px;
+}
+
+/* 헤더 메인 */
+.header-elements {
+  width: 1020px;
+  margin: auto;
+}
