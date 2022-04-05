@@ -2,14 +2,13 @@
 header {
   position: relative;
   height: 150px;
-  background-color: lightgreen;
-
 }
 
 /* 로그인 바 */
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .login-bar {
@@ -44,5 +43,250 @@ ul {
 /* 헤더 메인 */
 .header-elements {
   width: 1020px;
+  height: 87px;
   margin: auto;
+  display: grid;
+  grid-template-columns: 110px 176px 516px 45px 45px;
+  grid-template-rows: 74px 32px;
+  gap: 8px 30px;
+  grid-template-areas: 
+    "category logo search myCoupang cart"
+    "category link link myCoupang cart";
+
+}
+
+/* 카테고리 버튼 */
+.button--category {
+  grid-column: 1;
+  grid-row: 1/span 2;
+  width: 110px;
+  height: 116px;
+  background-image: url("../../assets/icon/hamburger.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 30px;
+  background-color: var(--color-blue-600);
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 200;
+  padding-top: 42px;
+  color: white;
+}
+
+/* 로고 */
+.header-elements h1 {
+  grid-column: 2;
+  width: 176px;
+  height: 40px;
+  background-image: url("../../assets/logo/logo.svg");
+  background-size: cover;
+}
+
+.header-elements .logo {
+  display: block;
+  opacity: 0%;
+}
+
+/* 검색 폼 */
+.search-area {
+  grid-column: 3;
+  width: 518px;
+  height: 42px;
+  margin-top: 20px;
+  border: 1px solid var(--color-blue-600);
+}
+
+.search-area #search-category {
+  float: left;
+  width: 135px;
+  height: 40px;
+  appearance: none;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 12px;
+  line-height: 120%;
+  color: var(--color-gray-700);
+  border: none;
+  background-image: url("../../assets/icon/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position-x: 108px;
+  background-position-y: center;
+  border-right: 1px solid var(--color-gray-100);
+  background-color: white;
+}
+
+.search-area #search {
+  width: 301px;
+  height: 40px;
+  border: none;
+  float: left;
+  padding: 10px;
+  font-size: 12px;
+  color: var(--color-gray-600);
+  opacity: 50%;
+}
+
+.search-area button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  float: left;
+  background-color: white;
+}
+
+.search-area .mic {
+  background-image: url("../../assets/icon/mic.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-area .sch {
+  background-image: url("../../assets/icon/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-button {
+  width: 60px;
+  height: 116px;
+  border: none;
+  background-color: white;
+}
+
+/* 마이쿠팡 */
+.myCoupang {
+  position: relative;
+}
+
+.myCoupang button {
+  grid-column: 4;
+  margin-left: 10px;
+  background-image: url("../../assets/icon/my-coupang.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 29px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 120%;
+  padding-top: 30px;
+}
+
+.myCoupang-menu {
+  visibility: hidden;
+  position: absolute;
+  width: 90px;
+  height: 130px;
+  top: 115px;
+  left: -5px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid var(--color-gray-400);
+}
+
+.myCoupang-menu::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--color-gray-400);
+  border-width: 1px 1px 0 0;
+  top: -6px;
+  left: 38px;
+  transform: rotate(-45deg);
+  background-color: white;
+  z-index: 11;
+}
+
+.myCoupang-menu li {
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+.is--active .myCoupang-menu{
+  visibility: visible;
+}
+
+/* 장바구니 */
+.cart {
+  position: relative;
+}
+
+.cart button {
+  grid-column: 5;
+  background-image: url("../../assets/icon/cart.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 29px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 120%;
+  padding-top: 30px;
+}
+
+.cart .product-num {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: var(--color-blue-600);
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  padding-top: 1px;
+  padding-right: 1px;
+}
+
+.cart .product-list {
+  visibility: hidden;
+  position: absolute;
+  width: 288px;
+  height: 99px;
+  top: 115px;
+  right: -10px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 40px;
+  border: 1px solid var(--color-gray-400);
+}
+
+.cart .product-list::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--color-gray-400);
+  border-width: 1px 1px 0 0;
+  top: -6px;
+  right: 16px;
+  transform: rotate(-45deg);
+  background-color: white;
+  z-index: 11;
+}
+
+.cart--empty .product-list {
+  visibility: visible;
+}
+
+/* 링크 */
+.link {
+  width: 780px;
+  grid-column: 2/span 2;
+}
+
+.link li {
+  display: inline-block;
+  margin: 4px 13px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 120%;
 }
