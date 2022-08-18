@@ -1,0 +1,172 @@
+/* CSS 작성 */
+/* 
+.header-area {
+  height: 188px;
+} */
+
+.logo-hype {
+  display: block;
+  width: 176px;
+  height: 40px;
+  margin-top: 100px;
+  margin-bottom: 48px;
+}
+
+.logo-img {
+  width: 176px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.section-area {
+  padding-top: 8px;
+}
+
+.section-top {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  margin-bottom: 24px;
+  line-height: 115%;
+  color: #181818;
+}
+
+.section-title {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.divider, .section-subtitle {
+  color: var(--color-gray-600);
+}
+
+.section-subtitle {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.product-card {
+  float: left;
+  position: relative;
+  margin: 8px;
+}
+
+.large {
+  width: 502px;
+  height: 310px;
+}
+
+.small {
+  width: 243px;
+  height: 310px;
+}
+
+.first {
+  margin-left: 0;
+}
+
+.last {
+  margin-right: 0;
+}
+
+.large-product {
+  position: absolute;
+  width: 444px;
+  height: 268px;
+  padding: 20px 28px 20px 28px;
+  border: 1px solid var(--color-gray-500);
+  margin: 0;
+}
+
+.product > img {
+  color: var(--color-gray-5);
+}
+
+.small-product {
+  position: absolute;
+  width: 198px;
+  height: 280px;
+  padding: 14px 22px 14px 21px;
+  border: 1px solid var(--color-gray-500);
+  margin: 0;
+}
+
+.product:hover, .product:focus {
+  border: 1px solid var(--color-blue-600);
+}
+
+.button {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background-color: #000000;
+  opacity: 20%;
+  transition-property: opacity, background-color;
+  transition-duration: 2s;  
+}
+
+.triangle {
+  content: '';
+  position: absolute;
+  width: 7.2px;
+  height: 7.2px;
+  left: 35%;
+  top: 40%;
+  
+  border: 1px solid var(--color-gray-100);
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+}
+
+.product:hover > .button::before {
+  content: '구매하기';
+  position: absolute;
+  left: 20px;
+  bottom: 12px;
+  width: 52px;
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--color-gray-100);
+}
+
+.product:hover > .button > span{
+  position: absolute;
+  left: 88px;
+  top: 50%;
+  transform: rotate(45deg) translateX(-80%) translateY(20%);
+}
+
+.product:hover > .button {
+  background-color: var(--color-blue-600);
+  opacity: 100%;
+  width: 112px;
+}
+
+
+.product:focus > .button::before {
+  content: '구매하기';
+  position: absolute;
+  left: 20px;
+  bottom: 12px;
+  width: 52px;
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--color-gray-100);
+}
+
+.product:focus > .button > span{
+  position: absolute;
+  left: 88px;
+  top: 50%;
+  transform: rotate(45deg) translateX(-80%) translateY(20%);
+}
+
+.product:focus > .button {
+  background-color: var(--color-blue-600);
+  opacity: 100%;
+  width: 112px;
+}
+
