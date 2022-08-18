@@ -1,0 +1,349 @@
+/* ---------------------------------------------- */
+/* 헤더                                           */
+/* ---------------------------------------------- */
+header {
+  width: 1020px;
+  height: 116px;
+  margin: 0px auto;
+}
+
+header::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  color: black;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+header button {
+  width: 110px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-white);
+  background-color: var(--color-blue-600);
+  border: none;
+}
+
+header button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 1px var(--color-red-500);
+  border-radius: 4px;
+}
+
+header button svg {
+  width: 30px;
+  height: 30px;
+}
+
+
+/* ---------------------------------------------- */
+/* 내비게이션                                     */
+/* ---------------------------------------------- */
+nav {
+  width: 1020px;
+  height: 500px;
+  margin: 0px auto;
+}
+
+nav h2 {
+  opacity: 0%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  position: relative;
+  bottom: -4px;
+  font-size: 20px;
+}
+
+.navigation__inner {
+  position: relative;
+}
+
+.first {
+  visibility: hidden;
+  padding-top: 5px;
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  box-shadow: -1px 4px 4px var(--color-gray-400);
+}
+
+.second {
+  visibility: hidden;
+  padding-top: 10px;
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  margin-left: 155px;
+  top: 0;
+  box-shadow: -1px 4px 4px var(--color-gray-400);
+  
+}
+
+.third {
+  visibility: hidden;
+  padding-top: 10px;
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  margin-left: 155px;
+  top: 0;
+  box-shadow: -1px 4px 4px var(--color-gray-400);
+}
+
+.is--active ul:first-child, .is--active{
+  visibility: visible;
+}
+
+a.is--active {
+  color: var(--color-blue-600);
+  position: relative;
+}
+
+.first a.is--active::after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: 6px solid transparent;
+  border-right-width: 0;
+  top: 8px;
+  right: 12px;
+  border-left-color: var(--color-blue-600);
+}
+
+.second a.is--active::after {
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  border: 6px solid transparent;
+  border-right-width: 0;
+  top: 4px;
+  right: 12px;
+  border-left-color: var(--color-blue-600);
+}
+
+.third a:hover, a:focus {
+  color: var(--color-blue-600);
+}
+
+.navigation.is--active .first::after, .second::after, .third::after{
+  content: '';
+  height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 2px solid var(--color-gray-200);
+}
+
+.navigation__list li {
+  width: 170px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 5px 0px 5px 20px;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.navigation__list li a {
+  display: block;
+  width: 150px;
+  height: 18px;
+}
+
+/* ---------------------------------------------- */
+/* 메인 콘텐츠                                    */
+/* ---------------------------------------------- */
+/* 메인 콘텐츠 영역의 최소 높이 설정 */
+.main{
+  min-height: 52rem;
+}
+
+/* ---------------------------------------------- */
+/* 푸터                                           */
+/* ---------------------------------------------- */
+
+.footer {
+  width: 100%;
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-gray-200);
+  display: flex;
+}
+
+.footer-links ul {
+  margin: 0 auto;
+}
+
+.footer-links li {
+  position: relative;
+  float: left;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 400;
+  padding: 5px 14px 6px 14px;
+  margin-top: 8px;
+}
+
+.footer-links .divider {
+  position: absolute;
+  margin-left: 12px;
+}
+
+.footer-main {
+  width: 100%;
+  height: 207px;
+  background-color: var(--color-white);
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-gray-800);
+}
+
+.footer-main-contents {
+  width: 1200px;
+  height: 143px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo h2 {
+  opacity: 0%;
+}
+
+.footer-logo {
+  width: 176px;
+  height: 40px;
+  background-image: url(../../assets/logo/logo-mono.svg);
+}
+
+.footer-business {
+  width: 264px;
+  height: 143px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-customer {
+  width: 293px;
+  height: 143px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-customer h3 {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-customer h3::after {
+  content: '';
+  position: absolute;
+  width: 98px;
+  height: 12px;
+  left: 0;
+  top: 5px;
+  border-right: 1px solid var(--color-gray-800);
+}
+
+.footer-customer h3 span {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.footer-customer .footer-customer-call {
+  width: 250px;
+  height: 58px;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+.footer-bankloan-cert {
+  width: 282px;
+  height: 84px;
+}
+
+.footer-bankloan-cert h3 {
+  font-size: 16px;
+}
+
+.footer-bankloan-cert p {
+  margin-top: 10px;
+}
+
+.footer-copy {
+  width: 100%;
+  height: 102px;
+  background-color: var(--color-gray-900);
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: 300;
+  color: var(--color-gray-200);
+  display: flex;
+}
+
+.footer-copy .copy {
+  position: relative;
+  margin: auto;
+  width: 1020px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copy .sns-links {
+  position: absolute;
+  width: 122px;
+  height: 34px;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insta-link {
+  border-radius: 100%;
+  background: linear-gradient(174.12deg, #2856EB
+  5.61%, #BC1888 22.32%, #CC2366 36.16%,
+  #DC2743 51.91%, #E6683C 73.38%,
+  #F09433 91.99%);
+}
