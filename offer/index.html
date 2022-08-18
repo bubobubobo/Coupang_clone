@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 쇼핑 제안 - 쿠팡(Coupang)</title>
+    <link rel="icon" href="/assets/favicon/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 헤더 영역 -->
+      <header class="header-area">
+        <div class="common-inner">
+          <h1 class="logo">
+            <a href="https://www.coupang.com/">
+              <picture>
+                <source srcset="./assets/logo/logo.webp" type="image/webp" />
+                <img src="./assets/logo/logo.png" alt="로고 이미지" />
+              </picture>
+            </a>
+          </h1>
+        </div>
+      </header>
+      <!-- //헤더 영역 -->
+
+      <!-- 오늘의 쇼핑 제안 영역 -->
+      <section class="shopping-suggestion">
+        <div class="common-inner">
+          <!-- 섹션 제목 -->
+          <div class="section-title">
+            <div class="icon-image"></div>
+            <h2>오늘의 쇼핑 제안</h2>
+          </div>
+
+          <!-- 상품 링크 카드 목록 -->
+          <div class="product-list">
+            <a href="/" class="product-card">
+              <span aria-label="할인율" class="discount is-active">30%</span>
+              <img
+                class="product-img"
+                src="./assets/offer/furniture.jpg"
+                alt="주방 수납장"
+              />
+              <div class="product-desc">
+                <p aria-label="제품명" class="product-name">
+                  솔로리빙 셀린 렌지대 600 800 주방 수납장 템바보드 전자레인지
+                  밥솥 에어프라이어 주방정리 수납장
+                </p>
+                <p aria-label="배송유형" aria-details="일반배송" class="dilivery-type normal"></p>
+                <div aria-label="별점 및 리뷰 수" class="ratings">
+                  <img class="four-half" src="./assets/sprites/rating-stars.png" alt="별점 4.5"/>
+                  <p class="total-rating">(3,255)</p>
+                </div>
+              </div>
+            </a>
+            <a href="/" class="product-card">
+              <span aria-label="할인율" class="discount hidden">0%</span>
+              <img
+              class="product-img"
+              src="./assets/offer/renton.jpg"
+              alt="감성 캠핑 랜턴"
+              />
+              <div class="product-desc">
+                <p aria-label="제품명" class="product-name">
+                  옆 동네몰 레트로 LED 감성 캠핑 랜턴 노란빛 대, 빈티지 브론즈
+                </p>
+                <p aria-label="배송유형" aria-details="로켓배송" class="dilivery-type rocket">
+                  <img class="badge-rocket" src="./assets/icon/badge-rocket.svg" alt="로켓배송">
+                </p>
+                <div aria-label="별점 및 리뷰 수" class="ratings">
+                  <img class="four-half" src="./assets/sprites/rating-stars.png" alt="별점 4.5"/>
+                  <p class="total-rating">(1,807)</p>
+                </div>
+              </div>
+            </a>
+            <a href="/" class="product-card">
+              <span aria-label="할인율" class="discount hidden">0%</span>
+              <img
+              class="product-img"
+              src="./assets/offer/drying-rack.jpg"
+              alt="식기 건조대"
+              />
+              <div class="product-desc">
+                <p aria-label="제품명" class="product-name">
+                  프리미엄 부착식 식기건조대 (600~900)AL 싱크대선반 씽크선반
+                  주방선반, 선택-2) 프리미엄 식기건조대 800AL
+                </p>
+                <p aria-label="배송유형" aria-details="무료배송" class="dilivery-type free">
+                  무료배송
+                </p>
+                <div aria-label="별점 및 리뷰 수" class="ratings">
+                  <img class="four" src="./assets/sprites/rating-stars.png" alt="별점 4.0"/>
+                  <p class="total-rating">(2,423)</p>
+                </div>
+              </div>
+            </a>
+            <a href="/" class="product-card">
+              <span aria-label="할인율" class="discount is-active">10%</span>
+              <img
+                class="product-img"
+                src="./assets/offer/boohgle.jpg"
+                alt="보오글 네모 냄비"
+              />
+              <div class="product-desc">
+                <p aria-label="제품명" class="product-name">
+                  타지 않는 냄비 보오글 네모 6종 풀세트(51가지 안전시험 인증,
+                  hBN 세라믹 코팅)
+                </p>
+                <p aria-label="배송유형" aria-details="로켓배송" class="dilivery-type rocket">
+                  <img class="badge-rocket" src="./assets/icon/badge-rocket.svg" alt="로켓배송">
+                </p>
+                <div aria-label="별점 및 리뷰 수" class="ratings">
+                  <img class="five" src="./assets/sprites/rating-stars.png" alt="별점 5.0"/>
+                  <p class="total-rating">(1,009)</p>
+                </div>
+              </div>
+            </a>
+            <a href="/" class="product-card">
+              <span aria-label="할인율" class="discount is-active">25%</span>
+              <img
+                class="product-img"
+                src="./assets/offer/deskset.jpg"
+                alt="철제 책상세트"
+              />
+              <div class="product-desc">
+                <p aria-label="제품명" class="product-name">
+                  베스트리빙 베이직 멀티 H형 1200 철제 책상세트, 화이트
+                </p>
+                <p aria-label="배송유형" aria-details="무료배송" class="dilivery-type free">
+                  무료배송
+                </p>
+                <div aria-label="별점 및 리뷰 수" class="ratings">
+                  <img class="four" src="./assets/sprites/rating-stars.png" alt="별점 4.0"/>
+                  <p class="total-rating">(3,203)</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- //오늘의 쇼핑 제안 영역 -->
+    </div>
+  </body>
+</html>

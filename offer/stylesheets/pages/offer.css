@@ -1,0 +1,159 @@
+/* 오늘의 쇼핑 제안 */
+.common-inner {
+  margin: 0 auto;
+  max-width: 1022px;
+}
+
+.logo{
+  width: 176px;
+  height: 40px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+picture > img {
+  width: 176px;
+  height: 40px;
+}
+
+.shopping-suggestion {
+  margin-top: 48px;
+}
+
+h1, h2 {
+  font-size: 1em;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  width: 234px;
+  height: 30px;
+  line-height: 115%;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.icon-image {
+  background-image: url('/assets/icon/shopping.svg');
+  width: 30px;
+  height: 30px;
+}
+
+.product-list {
+  width: 1020px;
+  height: 270px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 200px;
+  height: 270px;
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53px;
+  height: 30px;
+  background-color: var(--color-red-500);
+  color: var(--color-white);
+  line-height: 150%;
+  padding-top: 3px; /* to align center */
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  z-index: 10000;
+}
+
+.hidden {
+  display: none;
+}
+
+.product-img {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  margin: 14px 20px;
+  z-index: 9999;
+}
+
+.product-desc {
+  position: absolute;
+  top: 186px;
+}
+
+.product-name {
+  width: 172px;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ratings {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  width: 117px;
+  height: 17px;
+}
+
+.dilivery-type.normal {
+  /* display: none; */
+  margin: 0;
+}
+
+.dilivery-type.rocket {
+  margin: 12px 0 0 0;
+}
+
+.dilivery-type.free {
+  margin: 12px 0 0 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-gray-700);
+  line-height: 120%;
+}
+
+.dilivery-type > img {
+  width: 55px;
+  height: 16px;
+}
+
+
+.four {
+  position: absolute;
+  bottom: var(--rating-four-margin);
+  clip: var(--rating-four);
+}
+
+.four-half {
+  position: absolute;
+  bottom: var(--rating-four-half-margin);
+  clip: var(--rating-four-half);
+}
+
+.five {
+  position: absolute;
+  bottom: var(--rating-five-margin);
+  clip: var(--rating-five);
+}
+
+.total-rating {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-gray-700);
+  right: 0px;
+}
